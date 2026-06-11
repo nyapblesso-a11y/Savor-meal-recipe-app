@@ -1,0 +1,56 @@
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background var(--t-fast) var(--ease),
+              color var(--t-fast) var(--ease),
+              transform var(--t-fast) var(--ease);
+}
+.icon-btn:active { transform: scale(0.92); }
+
+/* Sizes */
+.icon-btn--sm { width: 30px; height: 30px; }
+.icon-btn--md { width: 36px; height: 36px; }
+.icon-btn--lg { width: 42px; height: 42px; }
+
+.icon-btn--sm .material-symbols-outlined { font-size: 16px; }
+.icon-btn--md .material-symbols-outlined { font-size: 19px; }
+.icon-btn--lg .material-symbols-outlined { font-size: 22px; }
+
+/* Variants */
+.icon-btn--default {
+  background: var(--color-surface-high);
+  color: var(--color-on-surface-variant);
+}
+.icon-btn--default:hover {
+  background: var(--color-surface-highest);
+  color: var(--color-on-surface);
+}
+
+.icon-btn--danger {
+  background: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+.icon-btn--danger:hover {
+  background: color-mix(in srgb, var(--color-error-container) 80%, var(--color-error) 20%);
+}
+
+.icon-btn--ghost {
+  background: transparent;
+  color: var(--color-on-surface-variant);
+}
+.icon-btn--ghost:hover {
+  background: var(--color-surface-high);
+  color: var(--color-on-surface);
+}
+
+.icon-btn--overlay {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+}
+.icon-btn--overlay:hover { transform: scale(1.12); }

@@ -1,0 +1,60 @@
+.ingredients-list__heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  margin-bottom: 12px;
+}
+
+.ingredients-list__heading .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.ingredients-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ingredients-list__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  background: var(--color-surface-low);
+  border: 1px solid color-mix(in srgb, var(--color-outline-variant) 50%, transparent);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--t-fast) var(--ease),
+              opacity var(--t-fast) var(--ease);
+}
+
+.ingredients-list__item:hover {
+  background: var(--color-surface-container);
+}
+
+.ingredients-list__item--checked {
+  opacity: 0.45;
+}
+
+.ingredients-list__check {
+  font-size: 18px;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  transition: font-variation-settings var(--t-fast) var(--ease);
+}
+
+.ingredients-list__text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-on-surface);
+  line-height: 1.4;
+}
+
+.ingredients-list__item--checked .ingredients-list__text {
+  text-decoration: line-through;
+}
