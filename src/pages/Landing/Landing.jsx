@@ -184,7 +184,6 @@ export default function Landing({ onEnter }) {
           </div>
         </section>
 
-        {/* ── CTA ───────────────────────────────────────────────── */}
         <section className="landing-cta">
           <div className="landing-cta__card">
             <div className="landing-cta__dots" />
